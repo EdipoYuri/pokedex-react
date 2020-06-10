@@ -17,6 +17,7 @@ export const Link = styled(RouterLink)`
   height: 100%;
   display: flex;
   align-items: center;
+  color: white;
 
   margin-left: 20px;
   margin-right: 20px;
@@ -24,8 +25,7 @@ export const Link = styled(RouterLink)`
   padding-right: 20px;
   
   text-decoration: none;
-
-  &:visited { color: #F5F7FA; }
+  
   &:hover {
     background-color: rgba(148, 31, 39, 0.5);
   }
