@@ -9,3 +9,13 @@ export const getPokemon = async (filter: string, value: string) => {
     console.error(error);
   }
 }
+
+export const getPokemonRange = async (initialRange: number, finalRange: number) => {
+  try{
+    const response = await fetch(`${url}/pokemon?offset=${initialRange}&limit=${finalRange}`);
+    const json = await response.json();
+    return json.results;
+  }catch(error){
+    console.error(error);
+  }
+}

@@ -1,29 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom';
-import { getPokemon } from './services/services';
 import Navbar from './components/Navbar/Navbar';
 import Pokedex from './pages/pokedex/Pokedex';
 import About from './pages/about/About'
 
 const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  min-height:100vh;
+  height: 100%;
   background-color: aliceblue;
 `
 
 function App() {
-  const [pokemon, setPokemon] = useState<PokemonInfo[]>([]);
-
-  const showPokemonName = async () => {
-    const pokeInfo = await getPokemon('pokemon', '1');
-    await setPokemon(pokeInfo);
-  }
-
   return (
     <Router>
       <Container>
