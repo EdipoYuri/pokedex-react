@@ -89,6 +89,11 @@ export const SimpleCard = styled.div`
     }}
   }
 
+  &:after{
+    display: none;
+    content: url(${props => props.frontImage}) url(${props => props.backImage});
+  }
+
   @media(max-width: 1024px) {
     ${props => {
       if(props.types[1] === undefined){

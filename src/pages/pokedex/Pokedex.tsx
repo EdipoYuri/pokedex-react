@@ -15,7 +15,7 @@ const Pokedex = () => {
   }, [])
 
   const fetchData = async () => {
-    setPreviousValue(MAX_PKMN_LOAD * loadMoreCount);
+    setPreviousValue(MAX_PKMN_LOAD * loadMoreCount + 1);
     setLoadMoreCount(loadMoreCount+1);
     try {
       for (let index = previousValue; index <= MAX_PKMN_LOAD * loadMoreCount; index++) {
