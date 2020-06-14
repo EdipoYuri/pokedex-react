@@ -89,6 +89,23 @@ export const SimpleCard = styled.div`
     }}
   }
 
+  @media(max-width: 1024px) {
+    ${props => {
+      if(props.types[1] === undefined){
+        return `
+          background-color: ${handleTypeColor(props.types[0])};
+          background-image: url(${props.frontImage});
+        `
+      } else {
+        return `
+          background-image: 
+            url(${props.frontImage}), 
+            linear-gradient(to right, ${props.types.map((item, index) => {return `${handleTypeColor(item)} 50%`})});                                
+        `
+      }
+    }}
+  }
+
   display: flex;
   justify-content: center;
   align-items: flex-end;
