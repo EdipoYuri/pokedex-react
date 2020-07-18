@@ -1,5 +1,5 @@
-import React from 'react';
-import { Bar, Link } from './Styles';
+import React from 'react'
+import { Bar, Link } from './Styles'
 
 
 const Navbar = () => {

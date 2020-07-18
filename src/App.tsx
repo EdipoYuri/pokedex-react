@@ -1,13 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 import {
   BrowserRouter as Router,
   Switch,
   Route
-} from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
-import Pokedex from './pages/pokedex/Pokedex';
-import About from './pages/about/About'
+} from 'react-router-dom'
+import Navbar from './components/Navbar/Navbar'
+import Pokedex from './pages/pokedex/Pokedex'
 
 const Container = styled.div`
   width: 100vw;
@@ -23,9 +22,6 @@ function App() {
         <Navbar />
 
         <Switch>
-          <Route path='/about'>
-            <About />
-          </Route>
           <Route exact path='/'>
             <Pokedex />
           </Route>

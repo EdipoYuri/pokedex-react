@@ -1,45 +1,45 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 const handleTypeColor = colors => {
   switch (colors.type.name) {
     case "bug":
-      return "#A8B820";
+      return "#A8B820"
     case "dark":
-      return "#705848";
+      return "#705848"
     case "dragon":
-      return "#7038F8";
+      return "#7038F8"
     case "eletric":
-      return "#F8D030";
+      return "#F8D030"
     case "fairy":
-      return "#9B6470";
+      return "#9B6470"
     case "fighting":
-      return "#C03028";
+      return "#C03028"
     case "fire":
-      return "#F08030";
+      return "#F08030"
     case "flying":
-      return "#A890F0";
+      return "#A890F0"
     case "ghost":
-      return "#493963";
+      return "#493963"
     case "grass": 
-      return "#539665";
+      return "#539665"
     case "ground":
-      return "#E0C068";
+      return "#E0C068"
     case "ice":
-      return "#98D8D8";
+      return "#98D8D8"
     case "normal":
-      return "#A8A878";
+      return "#A8A878"
     case "poison":
-      return "#A040A0";
+      return "#A040A0"
     case "psychic":
-      return "#F85888";
+      return "#F85888"
     case "rock":
-      return "#B8A038";
+      return "#B8A038"
     case "steel":
-      return "#B8B8D0";
+      return "#B8B8D0"
     case "water":
-      return "#6890F0";
+      return "#6890F0"
     default: 
-      return "#68A090";
+      return "#68A090"
   }
 }
 

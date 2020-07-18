@@ -1,5 +1,5 @@
-import React from "react";
-import { SimpleCard, PokeName } from "./Styles";
+import React from "react"
+import { SimpleCard, PokeName } from "./Styles"
 
 const Card = (props: CardInfos) => {
   return (
@@ -14,4 +14,4 @@ const Card = (props: CardInfos) => {
   )
 }
 
-export default Card;
+export default Card
