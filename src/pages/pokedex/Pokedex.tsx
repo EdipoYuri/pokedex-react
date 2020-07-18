@@ -21,6 +21,7 @@ const Pokedex = () => {
 
   useEffect(() => {
     SearchPokemon(false)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   
   async function SearchPokemon(isSearch: boolean) {
