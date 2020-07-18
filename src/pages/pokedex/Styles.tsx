@@ -38,3 +38,41 @@ export const LoadMoreButton = styled.button`
     outline: 0;
   }
 `
+
+export const SearchBar = styled.form`
+  margin: 20px;
+  display: flex;
+  
+  box-shadow: 2px 2px 5px black;
+
+  @media(max-width: 500px){
+    width: 90vw;
+  }
+`
+
+export const SearchInput = styled.input`
+  width: 400px;
+  height: 40px;
+  padding-left: 15px;
+
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+
+  @media(max-width: 500px){
+    width: 75%;
+  }
+`
+
+export const SearchButton = styled.button`
+  width: 100px;
+  height: 40px;
+
+  border: none;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+
+  @media(max-width: 500px){
+    width: 25%;
+  }
+`

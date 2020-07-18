@@ -1,45 +1,16 @@
 import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
-import { Page, PokeList, LoadMoreButton } from './Styles'
+import { 
+  Page,
+  PokeList, 
+  LoadMoreButton, 
+  SearchBar,
+  SearchInput, 
+  SearchButton 
+} from './Styles'
 import { getPokemon } from '../../services/services'
 import Card from '../../components/Simple Card/Card'
 
-const SearchBar = styled.form`
-  margin: 20px;
-  display: flex;
-  
-  box-shadow: 2px 2px 5px black;
 
-  @media(max-width: 500px){
-    width: 90vw;
-  }
-`
-
-const SearchInput = styled.input`
-  width: 400px;
-  height: 40px;
-
-  padding-left: 15px;
-
-  border: none;
-  border-radius: 5px 0 0 5px;
-
-  @media(max-width: 500px){
-    width: 75%;
-  }
-`
-
-const SearchButton = styled.button`
-  width: 100px;
-  height: 40px;
-
-  border: none;
-  border-radius: 0 5px 5px 0;
-
-  @media(max-width: 500px){
-    width: 25%;
-  }
-`
 
 const Pokedex = () => {
   const MAX_LOAD = 20
