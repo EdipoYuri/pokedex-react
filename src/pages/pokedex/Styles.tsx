@@ -72,6 +72,8 @@ export const SearchButton = styled.button`
   border-radius: 0 5px 5px 0;
   outline: none;
 
+  cursor: pointer;
+
   @media(max-width: 500px){
     width: 25%;
   }

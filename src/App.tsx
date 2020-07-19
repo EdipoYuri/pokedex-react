@@ -7,9 +7,9 @@ import {
 } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Pokedex from './pages/pokedex/Pokedex'
+import Footer from './components/Footer/Footer'
 
 const Container = styled.div`
-  width: 100vw;
   min-height:100vh;
   height: 100%;
   background-color: aliceblue;
@@ -26,6 +26,7 @@ function App() {
             <Pokedex />
           </Route>
         </Switch>
+        <Footer/>
       </Container>
     </Router>
   );

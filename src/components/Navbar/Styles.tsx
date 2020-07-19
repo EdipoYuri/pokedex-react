@@ -25,8 +25,5 @@ export const Link = styled(RouterLink)`
   padding-right: 20px;
   
   text-decoration: none;
-  
-  &:hover {
-    background-color: rgba(148, 31, 39, 0.5);
-  }
+  cursor: default;
 `
